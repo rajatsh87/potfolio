@@ -1,0 +1,18 @@
+<nav>
+    <div class="hamburger" (click)="toggel()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <ul class="nav-links" [ngClass]="{open : hamburger_val}">
+    <!-- <ul class="nav-links"> -->
+        <li [ngClass]="{fade : hamburger_val}"><a href="#">About</a></li>
+        <li [ngClass]="{fade : hamburger_val}"><a href="#">Contact</a></li>
+        <li [ngClass]="{fade : hamburger_val}"><a href="#">Projects</a></li>
+    </ul>
+</nav>
+
+<section class="landing">
+    <img src="../../../assets/images/circles.svg" alt="image">
+    <h1>Images</h1>
+</section>
