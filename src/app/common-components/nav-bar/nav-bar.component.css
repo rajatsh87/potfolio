@@ -74,25 +74,22 @@ nav{
          pointer-events: none ;
      }
      .open{
-         /* opacity: 1; */
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path:circle(1000px at 90% -10%);
         pointer-events:all;
      }
      
-     /* .nav-links li{
-         opacity: 0;
-     } */
+     
      nav li a{
          font-size: 25px;
      }
-     .nav-links li:nth-child(1){
+     nav li a:nth-child(1){
          transition: all .5s ease .2s;
      }
-     .nav-links li:nth-child(2){
+     nav li a:nth-child(2){
         transition: all .5s ease .4s;
      }
-     .nav-links li:nth-child(3){
+     nav li a:nth-child(3){
         transition: all .5s ease .6s;
      }  
      li.fade{
