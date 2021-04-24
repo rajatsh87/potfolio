@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { interval, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,16 +7,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
-
+  
+  subscription?:Subscription
   constructor() { }
   hamburger_val=false
   about=false
   ngOnInit(): void {
+    console.log(this.hamburger_val)
   }
 
   toggel(){
-    console.log("changed  ")
+    this.toggels()
+    this.subscription = interval(2000).subscribe(val => {
+      this.toggels()
+    });
+    
+
+  }
+  toggels(){
+    console.log(this.hamburger_val)
     this.hamburger_val=!this.hamburger_val
+    if(this.subscription){
+      this.subscription.unsubscribe();
+      console.log("un sub")
+    }
   }
   toggel1(){
     console.log("active")
