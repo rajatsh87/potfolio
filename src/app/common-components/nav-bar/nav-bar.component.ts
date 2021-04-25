@@ -32,8 +32,4 @@ export class NavBarComponent implements OnInit {
       console.log("un sub")
     }
   }
-  toggel1(){
-    console.log("active")
-    this.about=!this.about
-  }
 }

@@ -1,0 +1,29 @@
+.about{
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    line-height: 1.2;
+}
+
+.about-2{
+     font-family: 'Roboto', sans-serif;
+     font-size: 20px;
+}
+
+.intro{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+.para   {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.custom{
+    margin-top: 15vh;
+}
+@media screen and (max-width: 786px) {
+    .custom{
+        margin-top: 5vh;
+    }
+}
